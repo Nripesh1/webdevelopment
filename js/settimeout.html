@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p id="showTime"></p>
+        <script>
+            var clock = setInterval(timing, 1000);
+            function timing(){
+            var d = new Date();
+            var abc = d.toLocaleTimeString();
+            document.getElementById('showTime').innerHTML = abc;
+            }
+        </script>
+    </body>
+</html>

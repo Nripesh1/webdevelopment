@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Take Input From SelectBox</title>
+        <script type="text/javascript">
+            function fun1()
+            {
+                var select = document.getElementById("selectbox");
+                alert(select.options[select.selectedIndex].value)
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <select id="selectbox">
+        <option value="Yes Nripes is Boss">Boss?</option>
+        <option value="Yes Kohli is my hero">Hero?</option>
+        <option value="Yes he is  Sir">Sir?</option>
+        <option value="Yes Nripesh is King">king?</option>
+        </select> <br>
+        <button onclick="fun1()">Click me</button>
+    </body>
+</html>

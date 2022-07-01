@@ -1,0 +1,9 @@
+.container{
+    border: solid 5px rebeccapurple;
+}
+.row{
+    border: solid 5px red;
+}
+.col{
+    border: solid 2px royalblue;
+}

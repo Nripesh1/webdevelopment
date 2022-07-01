@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RadioButton</title>
+        <script>
+           function fun1()
+           {
+            var rdo1 = document.getElementById("rdo1");
+            var rdo2 = document.getElementById("rdo2");
+            
+            if(rdo1.checked == true)
+               alert("Answer is  : " +rdo1.value);
+            else if(rdo2.checked == true)
+                alert("Answer is : " +rdo2.value);
+            else
+                alert("No One is selected");       
+           }
+        </script>
+    </head>
+    <body>
+        <input id="rdo1" name="grp1"  type="radio" value="Yes Obviously" >Nripesh is king?</input> <br>
+        <input id="rdo2" name="grp1"  type="radio" value="Yes" >Nripesh is Badshah?</input> <br>
+        <button onclick="fun1()" id="btn1">Click Over Here</button>
+    </body>
+</html>

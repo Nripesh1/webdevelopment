@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+<title>WINDOW.PRINT</title>    
+    </head>
+    <body>
+        <div id="divone">
+        Div content is here.
+        <button onclick="myfun('divone')">Divone</button>
+       </div>
+       <div id="divtwo">
+           Div two content is here.
+           <button onclick="myfun('divtwo')">DivTwo</button>
+       </div>
+       <div id="divthree">
+           Div three content is here.
+           <button onclick="myfun('divthree')">DivThree</button>
+       </div>
+       <button onclick="mywholepage()">WholePage</button>
+       <script>
+           function mywholepage(){
+               window.print();
+           }
+           function myfun(paravalue){
+               var backup = document.body.innerHTML;
+               var divcontent = document.getElementById(paravalue).innerHTML;
+               document.body.innerHTML = divcontent;
+               window.print();
+           }
+       </script>
+    </body>
+</html>

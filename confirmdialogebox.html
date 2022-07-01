@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This page says</title>
+    </head>
+    <body>
+            
+            <script>
+                function myfun(){
+                var userconfirmation = confirm("Do you want to visit this website");
+                if(userconfirmation==true){
+                    window.open("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_prompt");
+                    return true;
+                }
+                else{
+                    document.write("User doesnot want to visit the site");
+                    return false;
+                }}
+            </script>
+            <input type="button" name="" onclick="myfun()" value="click me" >
+    </body>
+</html>

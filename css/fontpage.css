@@ -1,0 +1,21 @@
+.a{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    padding-top: 100px;
+    
+}
+body{
+    margin: 0;
+    background-color: aqua;
+    text-align: center;
+}
+.b{
+    height: 300px;
+    width: 300px;
+ 
+}
+h1{
+    margin-top: 0;
+}
+
